@@ -1,5 +1,17 @@
 const Discord = require("discord.js");
 const client = new Discord.Client();
+client.on('ready', () => {
+   console.log(`----------------`);
+      console.log(`Admin Bot- Script By : Black Shop`);
+        console.log(`----------------`);
+      console.log(`ON ${client.guilds.size} Servers '     Script By : Black Shop ' `);
+    console.log(`----------------`);
+  console.log(`Logged in as ${client.user.tag}!`);
+client.user.setGame(`Black Shop`,"http://twitch.tv/Black Shop")
+client.user.setStatus("dnd")
+});
+
+c
 client.on('message', message => {
             if(!message.channel.guild) return;
 let args = message.content.split(' ').slice(1).join(' ');
