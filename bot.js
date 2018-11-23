@@ -11,7 +11,7 @@ client.user.setGame(`Black Shop`,"http://twitch.tv/Black Shop")
 client.user.setStatus("dnd")
 });
 
-c
+
 client.on('message', message => {
             if(!message.channel.guild) return;
 let args = message.content.split(' ').slice(1).join(' ');
